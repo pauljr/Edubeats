@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+		<script src="raphael-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="raphael_circle.js" type="text/javascript" charset="utf-8"></script>
+
+        <style>
+            html, body {
+                margin: 0px;
+                padding: 0px;
+                background-color:#333;
+            }
+            #console {
+                width: 1400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #right {
+            	width: 280px;
+            	float:right;
+            }
+            #left {
+                float: left;
+                width: 355px;
+            }    
+            .clearfix:after {
+				 visibility: hidden;
+				 display: block;
+				 font-size: 0;
+				 content: " ";
+				 clear: both;
+				 height: 0;
+			}
+			.clearfix { display: inline-block; }
+			/* start commented backslash hack \*/
+			* html .clearfix { height: 1%; }
+			.clearfix { display: block; }
+			/* close commented backslash hack */
+        </style> 
+        
+    </head>
+    
+    <body>
+        <div id="console">
+            <div id="left">
+            	<button id="submit" type="button">Submit</button>
+            </div>
+            <div id="right">
+                <details>
+                	<summary>Click Here to Learn How to Play </summary>
+                </details>
+            </div>
+             
+        </div>
+        
+        <script src="ProbFile/raphael.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8"></script>
+        <script>
+           //javascript here
+           
+        	// Creates canvas 320 × 200 at 10, 50
+			var paper = Raphael(10, 50, 640, 400);
+
+			// Creates circle at x = 50, y = 40, with radius 10
+			var circle = paper.circle(50, 40, 10);
+
+			// Sets the fill attribute of the circle to red (#f00)
+			circle.attr("fill", "#f00");
+
+			// Sets the stroke attribute of the circle to white
+			circle.attr("stroke", "#fff");
+        </script>
+    </body>
+
+</html>
